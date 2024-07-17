@@ -1,0 +1,19 @@
+
+<section class="admin-categories">
+
+  <header class="page-header">
+    <h1>New Category</h1>
+  </header>
+
+  <%= form_for [:admin, @category] do |f| %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+
+    <%= f.submit 'Create Category', class: 'btn btn-lg btn-primary' %>
+  <% end %>
+
+  <%= link_to 'Back to Categories', admin_categories_path, class: 'btn btn-lg btn-secondary' %>
+
+</section>
