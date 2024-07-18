@@ -16,7 +16,6 @@
   <nav>
 
   
-<%= stylesheet_link_tag 'users', media: 'all', 'data-turbolinks-track' => true %>
 
   <% if session[:user_id] %>
     <%= link_to 'Logout', logout_path, method: :delete %>
