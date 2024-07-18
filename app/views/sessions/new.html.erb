@@ -2,17 +2,17 @@
 <h1>Login Here!</h1>
 
 <%= form_with url: sessions_path do |form| %>
-  <div>
-    <%= form.label :email %>
-    <%= form.email_field :email %>
+  <div class="mb-3">
+    <%= form.label :email, class: "form-label" %>
+    <%= form.email_field :email, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :password %>
-    <%= form.password_field :password %>
+  <div class="mb-3">
+    <%= form.label :password, class: "form-label" %>
+    <%= form.password_field :password, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.submit "Login" %>
+  <div class="mb-3">
+    <%= form.submit "Login Now!", class: "btn btn-primary" %>
   </div>
 <% end %>
